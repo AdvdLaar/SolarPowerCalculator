@@ -1,4 +1,40 @@
 # SolarPowerCalculator
-A C# program that predicts the power production for your system in a year.
+Solar Power Production Calculator
 
-This program can calculate the power production of your system for a year. It will show you a graph that represents the months with power production that your system will probably produce. Why probably? Nature does was nature does. Sometimes the sun shines more or less. But this gives an indication how much power can be produced. What do I need to make this calculation? You need to know how maximum power production of your system. So if you have 20 solar panels of 410Wp (watt peak). You have a system of 20 * 410Wp = 8200 Wp. start the program and change the number to your system power (Wp). The power production can be determined from this number. here in the Netherlands we have an anual power production of 0,85 times the Wp.  So a 8200Wp system over here can produce. 8200 * 0,85 = 6970kWh anually. How do you know what the power production is each month. That's actually simple. if you have a graph of your system of a full year, you can see the power that was generated each month. We have to determine the production percentage each month. How do we do that? That's simple. Add all power of a full year. The production factor of January is PJanuary/PYear. You do this for each month. So all numbers added of the monthly production number will be 1 (100%). Each system has it's own particular power production characteristics, so I will make it powssible for you to have an external file with 12 lines of the power production each month. This way the program will calculate the power production factor for each month and this wil be more representive of your system. So you start the program and change the Wp to match with the power of your system. Don't change the efficiency yet. Just do a calculation. You will see that the numbers don't coorelate with last month production. Double click on that month and a pop-up will appear. Change it to the right value (kWh) and press Ok. you will notice that the efficiency has changed to match the power production of the month you have changed. 
+This program can calculate the power production of your system for a year. It will show you a graph that represents the months with power production that your system will probably produce.
+
+Why probably? Nature does what nature does. Sometimes the sun shines more or less. But this gives an indication of how much power can be produced.
+What do I need to make this calculation?
+
+You need to know the maximum power production of your system. So, for example, if you have 20 solar panels of 410Wp (watt peak), you have a system with 20 * 410Wp = 8200 Wp.
+
+Start the program and change the number to match your system's power (Wp).
+
+The power production can be determined from this number. Here in the Netherlands, we have an annual power production factor of 0.85 times the Wp. So, an 8200Wp system over here can produce:
+
+8200 * 0.85 = 6970 kWh annually.
+
+How do you know what the power production is each month?
+
+That's actually simple. If you have a graph of your system’s production over a full year, you can see the power generated each month. We need to determine the production percentage for each month.
+
+How do we do that? It's simple:
+
+    Add all the power produced in a full year.
+    The production factor for January is calculated as:
+
+PJanuary / PYear.
+
+You do this for each month, so the sum of all monthly production factors will be 1 (100%).
+Customizing the Calculation for Your System
+
+Each system has its own particular power production characteristics, so I will make it possible for you to have an external file with 12 lines of the power production for each month. This way, the program will calculate the power production factor for each month based on your data and give a more accurate estimate.
+How to Use the Program
+
+    Start the program and enter your system's Wp value to match your total system power.
+    Do NOT change the efficiency just yet—perform a calculation first.
+    You will see the program calculate an estimated yearly production.
+    If the numbers don’t match your system's actual monthly production, double-click on a month in the graph.
+    Please try to pick an average month, avoiding extreme weather conditions.
+    A pop-up will appear—enter the correct kWh value for that month and click OK.
+    The program will automatically adjust the efficiency to reflect the updated data, and your results will become more accurate.
